@@ -1,0 +1,1 @@
+Uma página Lorem Ipsum com html e css totalmente responsiva.

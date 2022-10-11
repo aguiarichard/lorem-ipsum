@@ -1,0 +1,62 @@
+.cabecalho-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.navegacao-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.navegacao-footer p {
+    margin-right: 20px;
+}
+
+.menu-item-footer {
+    margin: 0;
+    margin-right: 60px;
+}
+
+.menu-item-footer a {
+    padding: 0;
+    border: none;
+}
+
+.menu-item-footer a:hover {
+    border: none;
+}
+
+/* mobile */
+
+@media (max-width: 1000px) {
+    .menu-footer {
+        display: none;
+    }
+
+    .logo-cwi {
+        display: none;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacao-footer {
+        margin: 0;
+    }
+
+    .navegacao-footer p {
+        margin: 0;
+    }
+
+    .copyright {
+        font-size: 12px;
+        width: 170px;
+        height: 18px;
+        overflow: hidden;
+    }
+}

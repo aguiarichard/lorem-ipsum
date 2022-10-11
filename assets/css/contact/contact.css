@@ -1,0 +1,286 @@
+.container-formulario {
+    display: flex;
+}
+
+.formulario {
+    flex-grow: 1;
+    margin-right: 40px;
+}
+
+.form-envie-mensagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.subtitulo-form {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin-bottom: 35px;
+    height: 420px;
+}
+
+.mensagem-grid {
+    grid-column: span 2;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-form {
+    font-size: 14px;
+    font-weight: 700;
+    color: #898989;
+    margin-bottom: 10px;
+}
+
+.input-form,
+.textarea-form,
+.select-form {
+    padding: 15px 0;
+    border: none;
+    border-bottom: solid 1px #D7D7D7;
+}
+
+.input-form:focus-visible,
+.textarea-form:focus-visible,
+.select-form:focus-visible {
+    outline: none;
+}
+
+input,
+textarea,
+select,
+.label-form-radio {
+    font-size: 14px;
+    margin-bottom: 33px;
+    color: #898989;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input::placeholder,
+select,
+.label-form-radio {
+    color: #A9A9A9;
+}
+
+.input-item-select {
+    position: relative;
+    justify-content: center;
+}
+
+.select-form {
+    appearance: none;
+    cursor: pointer;
+}
+
+.polygon {
+    width: 12px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+
+.textarea-form {
+    height: 80px;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #898989;
+}
+
+.container-ratio {
+    padding: 1px;
+    display: flex;
+    border-bottom: solid 1px #D7D7D7;
+    align-items: center;
+    height: 52px;
+}
+
+.label-form-radio {
+    margin: 0;
+    margin-right: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.input-radio {
+    margin: 0;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    border: solid 1px #898989;
+}
+
+.input-radio:checked {
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+    border: solid 4px #515070;
+    padding: 4px;
+}
+
+.input-item-checkbox {
+    position: relative;
+    flex-direction: initial;
+    align-items: center;
+    height: 60px;
+}
+
+.input-checkbox {
+    margin: 0;
+    margin-right: 10px;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: solid 1px #D7D7D7;
+}
+
+.texto-contato {
+    width: 300px;
+}
+
+.input-checkbox-label::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    height: 2px;
+    width: 9px;
+    background: #898989;
+    transform: rotate(-45deg);
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.input-checkbox-label::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    height: 2px;
+    width: 5px;
+    background: #898989;
+    transform: rotate(45deg) translateY(2px);
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.input-checkbox:checked+.input-checkbox-label:before {
+    opacity: 1;
+}
+
+.input-checkbox:checked+.input-checkbox-label:after {
+    opacity: 1;
+}
+
+.input-item-botao {
+    align-items: flex-end;
+    height: 60px;
+}
+
+.container-informacoes-contato {
+    background: linear-gradient(90deg, #515070 0%, #6B69B0 100%);
+    max-width: 555px;
+    width: 100%;
+}
+
+.subtitulo-contato {
+    margin-top: 40px;
+    margin-bottom: 125px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.img-contato {
+    max-width: 26px;
+    margin-right: 20px;
+}
+
+/* mobile */
+
+@media (max-width: 1110px) {
+    .container-formulario {
+        flex-direction: column;
+    }
+
+    .container-informacoes-contato {
+        max-width: initial;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-grid {
+        display: flex;
+        flex-direction: column;
+        height: initial;
+    }
+
+    .container-ratio {
+        margin-bottom: 30px;
+    }
+
+    .input-nome {
+        order: -3;
+    }
+
+    .input-email {
+        order: -2;
+    }
+
+    .input-item-select {
+        order: -1;
+    }
+
+    .input-item-botao {
+        align-items: center;
+    }
+
+
+    .select-form {
+        margin-bottom: 60px;
+    }
+
+    .polygon {
+        top: 48px;
+    }
+
+    .formulario {
+        margin-right: 0;
+    }
+
+    .container-formulario {
+        margin: initial;
+        width: initial;
+        max-width: initial;
+    }
+
+    .formulario, .container-contatos-infos {
+        margin: 0 auto;
+        width: 91%;
+        max-width: 1350px;
+    }
+}

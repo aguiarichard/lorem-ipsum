@@ -1,0 +1,124 @@
+header {
+    height: 80px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: solid 1px #ddd;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background: #fff;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.caixa-vector {
+    width: 34px;
+    height: 34px;
+    background-color: #515070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lorem-ipsum {
+    margin-left: 10px;
+    width: 45px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    display: flex;
+    margin: 0 20px;
+    font-size: 14px;
+    list-style: none;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #898989;
+    padding: 10px;
+    border-bottom: solid 3px transparent;
+}
+
+.menu-item a:hover {
+    border-bottom: solid 3px #515070;
+}
+
+
+/* mobile */
+
+.button-mobile {
+    display: none;
+}
+
+.button-control-input {
+    appearance: none;
+}
+
+@media (max-width: 700px) {
+    .lorem-ipsum-link {
+        display: none;
+    }
+
+    .button-mobile {
+        display: block;
+        order: -1;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .container-logo {
+        order: 1;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background-color: #515070;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    .menu-item a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .fechar-menu {
+        display: none;
+    }
+
+    .button-control-input:checked + .menu {
+        transform: translateX(0);
+    }
+
+    .button-control-input:checked ~ label .fechar-menu {
+        display: block;
+        width: 20px;
+    }
+
+    .button-control-input:checked ~ label .abrir-menu {
+        display: none;
+    }
+}

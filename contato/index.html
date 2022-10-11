@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/common/style.css">
+    <link rel="stylesheet" href="../assets/css/common/header.css">
+    <link rel="stylesheet" href="../assets/css/common/footer.css">
+    <link rel="stylesheet" href="../assets/css/contact/contact.css">
+    <title>Entre em contato!</title>
+</head>
+
+<body>
+    <header>
+        <div class="container container-header">
+            <div class="container-logo">
+                <a href="../index.html">
+                    <div class="caixa-vector">
+                        <img src="../assets/img/vector.svg" alt="vector">
+                    </div>
+                </a>
+
+                <a class="lorem-ipsum-link" href="../index.html">
+                    <img class="lorem-ipsum" src="../assets/img/lorem-ipsum.svg" alt="">    
+                </a>
+            </div>
+
+
+            <input type="checkbox" id="button-control" class="button-control-input">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="../sobre/index.html">Sobre nós</a>
+                </li>
+                <li class="menu-item">
+                    <a href="./">Serviços</a>
+                </li>
+                <li class="menu-item">
+                    <a href="../contato/index.html">Contato</a>
+                </li>
+            </ul>
+
+            <label class="button-mobile" for="button-control">
+                <img class="abrir-menu" src="../assets/img/hamburguer.svg" alt="abrir menu">
+                <img class="fechar-menu" src="../assets/img/x-solid.svg" alt="fechar menu">
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-home ovelay">
+                <img class="img-home" src="../assets/img/fundo-contato.jpg" alt="conversando no telefone">
+
+                <div class="sobrepor-img">
+                    <div class="container">
+                        <h1 class="titulo-home">Contato</h1>
+                        <p class="subtitulo-home">
+                            Olá, somos a Lorem Ipsum. <br>
+                            Nosso trabalho é desenvolver textos de marcação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+                <div class="container container-formulario">
+                    <form class="formulario" action="./processa-dados" method="post">
+                        <div class="form-envie-mensagem">
+                            <p class="subtitulo-form texto-laranja">Envie-nos uma mensagem</p>
+                            <img src="../assets/img/envelop.svg" alt="envelope">
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="input-item input-nome">
+                                <label class="label-form" for="nome">Nome</label>
+                                <input class="input-form texto-cinza" type="text" placeholder="Ex.: José Maria da Silva" id="nome">
+                            </div>
+                            <div class="input-item input-email">
+                                <label class="label-form" for="email">Email</label>
+                                <input class="input-form" type="email" placeholder="Ex.: seuemail@email.com" id="email">
+                            </div>
+                            <div class="input-item input-item-select">
+                                <label class="label-form" for="ramo">Ramo em que atua</label>
+                                <select class="select-form" name="ramo" id="ramo">
+                                    <option selected disabled>Selecione...</option>
+                                    <option value="DV">Desenvolvedor</option>
+                                    <option value="EG">Engenharia</option>
+                                    <option value="RH">Recursos Humanos</option>
+                                </select>
+
+                                <img class="polygon" src="../assets/img/polygon.svg">
+                            </div>
+                            <div class="input-item">
+                                <label class="label-form" for="Assunto">Assunto</label>
+                                <div class="container-ratio">
+                                    <input class="input-radio" type="radio" name="assunto" id="investimento">
+                                    <label class="label-form-radio" for="investimento">investimento</label>
+
+                                    <input class="input-radio" type="radio" name="assunto" id="contratacao">
+                                    <label class="label-form-radio" for="contratacao">Contratação</label>
+                                </div>
+                            </div>
+                            <div class="input-item mensagem-grid">
+                                <label class="label-form" for="mensagem">Mensagem</label>
+                                <textarea class="textarea-form" name="mensagem" id="mensagem" cols="30" rows="10" maxlength="200"
+                                    placeholder="Digite sua mensagem aqui"></textarea>
+                            </div>
+                            <div class="input-item input-item-checkbox">
+                                <input class="input-checkbox" type="checkbox">
+                                <label class="input-checkbox-label"></label>
+                                <p class="texto-home texto-cinza texto-contato">Li e concordo com a <span
+                                        class="politica-privacidade">política de privacidade</span></p>
+                            </div>
+                            <div class="input-item input-item-botao">
+                                <button class="botao botao-roxo">
+                                    <a class="botao-link" href="../index.html">
+                                        Enviar
+                                        <img class="arrow-botao" src="../assets/img/arrow.svg" alt="botao de enviar">
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="container-informacoes-contato">
+                        <div class="container-contatos-infos margin-left-50">
+                            <h2 class="subtitulo-contato">Informações de contato</h2>
+    
+                            <div class="informacoes-contato">
+                                <div class="contato">
+                                    <img class="img-contato" src="../assets/img/localizacao.svg" alt="localizacao">
+                                    <p class="texto-home">Av. Theodomiro Porto da <br> Fonseca, 3101 - Cristo Rei, São <br> Leopoldo -
+                                        RS, 93022-715</p>
+                                </div>
+                                <div class="contato">
+                                    <img class="img-contato" src="../assets/img/telefone.svg" alt="telefone">
+                                    <p class="texto-home"> (51) 3081-3600</p>
+                                </div>
+                                <div class="contato">
+                                    <img class="img-contato" src="../assets/img/email.svg" alt="email">
+                                    <p class="texto-home">contato@loremipsungram.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container container-footer">
+            <div class="cabecalho-footer">
+                <div class="container-logo">
+                    <div class="caixa-vector">
+                        <img src="../assets/img/vector.svg" alt="vector">
+                    </div>
+
+                    <img class="lorem-ipsum" src="../assets/img/lorem-ipsum.svg" alt="">
+                </div>
+
+                <img class="logo-cwi" src="../assets/img/logo-crescer.svg" alt="logo do crescer">
+            </div>
+
+            <div class="navegacao-footer">
+                <ul class="menu menu-footer">
+                    <li class="menu-item menu-item-footer">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="menu-item menu-item-footer">
+                        <a href="../sobre/index.html">Sobre nós</a>
+                    </li>
+                    <li class="menu-item menu-item-footer">
+                        <a href="./">Serviços</a>
+                    </li>
+                    <li class="menu-item menu-item-footer">
+                        <a href="../contato/index.html">Contato</a>
+                    </li>
+                </ul>
+
+                <p class="texto-home texto-cinza copyright">Copyright ©. Todos os direitos reservados à Lorem Ipsum.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
